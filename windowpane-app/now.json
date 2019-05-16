@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "my-react-app",
+  "name": "windowpane-app",
   "builds": [
     {
       "src": "package.json",
