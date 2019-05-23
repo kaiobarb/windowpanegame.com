@@ -59,11 +59,9 @@ const Warp = timeLoop(({ children: t, time }) =>
 function App() {
   return (
     <div className="App">
-      <header id="top" className="hero is-medium is-black">
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='level'>
-              <div className='level-left column'>
+      <header id="top" className="section is-centered has-text-centered has-background-black">
+          <div className='container is-right'>
+              <div className='container'>
                 {/* <img src={logo} className="image" alt="logo" /> */}
                 <Surface >
                   <Warp>
@@ -74,41 +72,49 @@ function App() {
                   Window Pane Game
                 </div>
               </div>
-              <div className='level-right'>
-                Video goes here
+              <div className='section container'>
+                <div className='container is-medium'>
+                  <iframe title="video" width="500" height="500" src="https://www.youtube.com/embed/d-Uf6tCtEEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
                 {/* <video width="700" controls>
                   <source src="trailer.mp4" type="video/mp4"/>
                 </video> */}
               </div>
-            </div>
-          </div>
         </div>
       </header>
 
       <nav className='navbar is-light'>
-      <div className="navbar-brand">
-        <a className="navbar-item" href="windowpanegame.com">
-          <img src={logo} height="28" alt="logo"/>
-        </a>
-      </div>
-      <div className='navbar-menu'>
-        <a className='navbar-item' href="#top">
-          Home
-        </a> 
+        <div className="navbar-brand">
+          <a className="navbar-item" href="windowpanegame.com">
+            <img src={logo} height="28" alt="logo"/>
+          </a>
+        </div>
+        <div className='navbar-menu'>
+          <a className='navbar-item' href="#top">
+            Home
+          </a> 
 
-        <a className='navbar-item' href='#about'>
-          About
-        </a>
+          <a className='navbar-item' href='#about'>
+            About
+          </a>
 
-        <a className='navbar-item' href='#about'>
-          Twitter
-        </a>
-      </div>
+          <a className='navbar-item' href='#about'>
+            Twitter
+          </a>
+        </div>
       </nav>
 
       <div id='about' className='section'>
-        <div className='content'>
+        <div className='section'>
+          <div className='content'>
+            <h1>About the Game</h1>
+            Window Pane is a student game developed at UC Santa Cruz from January to June, 2019. <br/>
+          </div>
           
+        </div>
+        <div className='section'>
+          <h1>About the developers </h1>
         </div>
       </div>
     </div>
