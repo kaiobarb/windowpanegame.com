@@ -4,16 +4,32 @@
     sans-serif;
 }
 
-.video-container {
+/* .video-container {
   position: relative;
   width: 100%;
-  height: 0;
+  height: 0px;
+  align-content: center;
   padding-bottom:35%;
 }
 .video {
   position: absolute;
   top: 0;
-  left: 20%;
-  width: 1211px;
-  height: 681px;
+  left: 5%;
+  /* width: 100%; 
+  height: 100%;
+} */
+
+.video-container {
+  min-height: 600px;
+}
+
+.video {
+  min-height: 650px;
+}
+
+.card {
+  max-width: 200px;
+  min-height: 256px;
+  max-height: 256px;
+  overflow: hidden;
 }

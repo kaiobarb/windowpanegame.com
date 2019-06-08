@@ -3,9 +3,10 @@ import React, {Component} from 'react';
 export default class PersonalBio extends Component {
 
     ProfileContent(d) {
-      let v  = d.map( (data) => {
+      var sorted = d.sort((a, b) => a.name > b.name);
+      let v  = sorted.map( (data) => {
         return (
-          <div className='column'>
+          <div className='column is-3'>
           <div className='card'>
             <div className='card-content'>
               <div className='media'>
@@ -15,12 +16,12 @@ export default class PersonalBio extends Component {
                   </figure>
                 </div>
                 <div className='media-content'>
-                  <p className='title is-4'>{data.name}</p>
-                  <p className='subtitle is-6 has-text-grey'>{data.role}</p>
+                  <p className='title is-6'>{data.name}</p>
+                  <p className='subtitle is-7 has-text-grey'>{data.role}</p>
                 </div>
               </div>
               <div className='content'>
-                {data.bio}
+                <p className='is-size-7'>{data.bio}</p>
               </div>
             </div>
           </div>
@@ -34,9 +35,11 @@ export default class PersonalBio extends Component {
       let data = this.props.data;
       console.log(this.ProfileContent(data.profiles))
       return(
-        
-        <div className='columns is-multiline'>
-            {this.ProfileContent(data.profiles)}
+        <div className='section'>
+          <div className='title'>The Team</div>
+          <div className='columns is-multiline'>
+              {this.ProfileContent(data.profiles)}
+          </div>
         </div>
 
         

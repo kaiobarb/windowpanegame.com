@@ -99,7 +99,7 @@ function App() {
               </div>
               <div className='section'>
                 <div className='video-container'>
-                  <iframe className='video' width="1211" height="681" src="https://www.youtube.com/embed/92ma43ZWkwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe className='video' width="1211" height="681" src="https://www.youtube.com/embed/92ma43ZWkwI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
               </div>
       </header>
@@ -114,12 +114,10 @@ function App() {
               <div className='section'>
                 <div className='content'>
                   <h1>About the Game</h1>
-                  Window Pane is a student game developed at UC Santa Cruz from January to June, 2019. <br/>
+                  Window Pane is a psychological adventure where you play as a student who is offered free housing in return for doing some experiemnts. Explore your new apartment as you unveil
+                  the events that are taking place around you. Are you really in control? Find out by downloading the executable (Coming to the website soon!) <br/>
+                  Window Pane is based on the MK Ultra experiments conducted by the CIA in the late 50s and 60s. 
                 </div>
-                
-              </div>
-              <div className='section'>
-                <h1>About the developers </h1>
               </div>
             </div>
 
